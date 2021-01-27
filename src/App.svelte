@@ -32,9 +32,15 @@
 	}
 
 	h1 {
-		color: #ff3e00;
+		color: #ffffff;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
+	}
+
+	@media (prefers-color-scheme: light) {
+		h1 {
+			color: #ff3e00;
+		}
 	}
 </style>
