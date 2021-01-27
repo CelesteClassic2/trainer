@@ -1,12 +1,15 @@
 <script lang="ts">
+	import Game from "./Game.svelte";
+
 	let attempts = 0;
 	let hits = 0;
 </script>
 
 <main>
 	<h1>Celeste 2 Trainer</h1>
-	<button on:click={() => {attempts++; hits++;}}>Hit</button>
-	<button on:click={() => {attempts++;}}>Miss</button>
+	<Game />
+	<!-- <button on:click={() => {attempts++; hits++;}}>Hit</button>
+	<button on:click={() => {attempts++;}}>Miss</button> -->
 	{#if attempts === 0}
 		<p>You have done no attempts.</p>
 	{:else}
