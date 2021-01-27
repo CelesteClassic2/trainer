@@ -8,8 +8,9 @@
 <main>
 	<h1>Celeste 2 Trainer</h1>
 	<Game />
-	<!-- <button on:click={() => {attempts++; hits++;}}>Hit</button>
-	<button on:click={() => {attempts++;}}>Miss</button> -->
+	<br>
+	<button on:click={() => {attempts++; hits++;}}>Hit</button>
+	<button on:click={() => {attempts++;}}>Miss</button>
 	{#if attempts === 0}
 		<p>You have done no attempts.</p>
 	{:else}
