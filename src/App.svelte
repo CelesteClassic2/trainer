@@ -3,14 +3,19 @@
 
 	let attempts = 0;
 	let hits = 0;
+
+	function hit() {
+		attempts++;
+		hits++;
+	}
+	function miss() {
+		attempts++;
+	}
 </script>
 
 <main>
 	<h1>Celeste 2 Trainer</h1>
-	<Game />
-	<br>
-	<button on:click={() => {attempts++; hits++;}}>Hit</button>
-	<button on:click={() => {attempts++;}}>Miss</button>
+	<Game hit={hit} miss={miss}/>
 	{#if attempts === 0}
 		<p>You have done no attempts.</p>
 	{:else}
